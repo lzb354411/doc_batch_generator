@@ -1,0 +1,15 @@
+# 构建产物
+*.exe
+*.syso
+*.exe~
+__pycache__/
+docgen/dist/
+
+# 用户真实业务模板（含公司名、人员姓名等敏感数据，不上传）
+/templates/
+
+# 本机运行配置（含真实路径与业务数据）
+docgen/config.json
+
+# 真实模板验收输出（内容含模板数据，不上传）
+docgen/testdata/real/out/

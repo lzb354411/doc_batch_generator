@@ -1,0 +1,52 @@
+{
+  "excel_path": "E:\\workgo\\work\\doc_batch_generator\\docgen\\testdata\\real\\data.xlsx",
+  "sheet_name": "Sheet1",
+  "header_row": 1,
+  "output_folder": "E:\\workgo\\work\\doc_batch_generator\\docgen\\testdata\\real\\out",
+  "create_subfolder": true,
+  "content_rules": null,
+  "number_rules": [
+    {
+      "enabled": true,
+      "row_start": 2,
+      "row_end": 3,
+      "template_folder": "E:\\workgo\\work\\doc_batch_generator\\templates",
+      "template_mode": "all",
+      "selected_groups": null,
+      "selected_templates": [
+        "1.模板-开工报告.xlsx",
+        "10.模板-低压分支箱施工记录.xlsx",
+        "11.模板-10kV电缆施工记录试验报告.xlsx",
+        "12.模板-0.4kV电缆施工记录试验报告.xlsx",
+        "13.模板-架空配电线路安装施工记录.xlsx",
+        "14.模板-接地电阻测试报告.xlsx",
+        "15.模板-工作票.xlsx",
+        "16.模板-监理日志.xlsx",
+        "17.模板-带电车辆承诺书.xlsx",
+        "18.模板-甲供物资超欠供分析表.xlsx",
+        "19.模板-验收记录.xlsx",
+        "2.模板-竣工报告.xlsx",
+        "20.模板-甲供物资超欠供分析表.xlsx",
+        "3.模板-避雷器试验报告.xlsx",
+        "4.模板-开关试验报告.xlsx",
+        "5.模板-FTU调试报告.xlsx",
+        "6.模板-环网柜施工记录.xlsx",
+        "7.模板-DTU调试报告.xlsx",
+        "8.模板-配电柜安装记录.xlsx",
+        "9.模板-变压器试验报告.xlsx"
+      ]
+    }
+  ],
+  "naming_items": [
+    {
+      "type": "column",
+      "key": "项目名称"
+    },
+    {
+      "type": "template",
+      "key": ""
+    }
+  ],
+  "groups": null,
+  "default_template_dir": ""
+}

@@ -1,0 +1,34 @@
+{
+  "excel_path": "e:\\workgo\\work\\doc_batch_generator\\docgen\\testdata\\data.xlsx",
+  "sheet_name": "Sheet1",
+  "header_row": 3,
+  "output_folder": "e:\\workgo\\work\\doc_batch_generator\\docgen\\testdata\\out_gui",
+  "create_subfolder": false,
+  "content_rules": [],
+  "number_rules": [
+    {
+      "enabled": true,
+      "row_start": 4,
+      "row_end": 9,
+      "template_folder": "e:\\workgo\\work\\doc_batch_generator\\docgen\\testdata\\templates",
+      "template_mode": "all",
+      "selected_groups": null,
+      "selected_templates": [
+        "4.模板-清单.csv",
+        "5.模板-GBK测试.txt"
+      ]
+    }
+  ],
+  "naming_items": [
+    {
+      "type": "column",
+      "key": "项目名称"
+    },
+    {
+      "type": "template",
+      "key": ""
+    }
+  ],
+  "groups": {},
+  "default_template_dir": ""
+}

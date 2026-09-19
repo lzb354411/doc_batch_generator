@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="1" stop-color="#1E50E0"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#15803D"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="40" width="176" height="176" rx="48" fill="url(#bg)"/>
+  <rect x="68" y="65" width="88" height="140" rx="14" fill="rgba(10,20,60,0.28)"/>
+  <rect x="68" y="58" width="88" height="140" rx="14" fill="#FFFFFF"/>
+  <rect x="84" y="86" width="68" height="9" rx="4.5" fill="#B2C0F0"/>
+  <rect x="84" y="104" width="56" height="9" rx="4.5" fill="#B2C0F0"/>
+  <rect x="84" y="122" width="62" height="9" rx="4.5" fill="#B2C0F0"/>
+  <circle cx="136" cy="164" r="18" fill="url(#badge)"/>
+  <polyline points="127,165 133,171 146,157" fill="none" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
