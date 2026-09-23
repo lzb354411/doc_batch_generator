@@ -364,7 +364,7 @@ func (ui *App) chooseTplFolder() {
 	}()
 }
 
-// scanTemplateFiles 扫描文件夹中的模板文件（按文件名排序）。
+// scanTemplateFiles 扫描文件夹中的模板文件（按文件名自然排序）。
 func scanTemplateFiles(dir string) []string {
 	dir = strings.TrimSpace(dir)
 	if dir == "" {
@@ -383,6 +383,46 @@ func scanTemplateFiles(dir string) []string {
 			files = append(files, e.Name())
 		}
 	}
-	sort.Strings(files)
+	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 	return files
+}
+
+// naturalLess 按自然顺序比较两个文件名：
+// 数字部分按数值大小比较（1、2、10、11），其余部分按字典序比较。
+func naturalLess(a, b string) bool {
+	ai, bi := 0, 0
+	for ai < len(a) && bi < len(b) {
+		ca, cb := a[ai], b[bi]
+		da, db := ca >= '0' && ca <= '9', cb >= '0' && cb <= '9'
+		if da && db {
+			ja, jb := ai+1, bi+1
+			for ja < len(a) && a[ja] >= '0' && a[ja] <= '9' {
+				ja++
+			}
+			for jb < len(b) && b[jb] >= '0' && b[jb] <= '9' {
+				jb++
+			}
+			// 去掉前导零后比较数值大小
+			ta := strings.TrimLeft(a[ai:ja], "0")
+			tb := strings.TrimLeft(b[bi:jb], "0")
+			if len(ta) != len(tb) {
+				return len(ta) < len(tb)
+			}
+			if ta != tb {
+				return ta < tb
+			}
+			// 数值相同时前导零多者排在前面（如 "01" 在 "1" 前）
+			if ja-ai != jb-bi {
+				return ja-ai < jb-bi
+			}
+			ai, bi = ja, jb
+			continue
+		}
+		if ca != cb {
+			return ca < cb
+		}
+		ai++
+		bi++
+	}
+	return len(a)-ai < len(b)-bi
 }

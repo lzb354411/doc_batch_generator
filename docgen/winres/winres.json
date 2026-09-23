@@ -9,7 +9,7 @@
       "0409": {
         "identity": {
           "name": "com.docgen.tool",
-          "version": "1.0.0.0"
+          "version": "1.0.1.0"
         },
         "description": "资料文档生成",
         "minimum-os": "vista",
@@ -31,29 +31,29 @@
     "#1": {
       "0000": {
         "fixed": {
-          "file_version": "1.0.0.0",
-          "file_version_raw": "1.0.0.0",
-          "product_version": "1.0.0.0",
-          "product_version_raw": "1.0.0.0"
+          "file_version": "1.0.1.0",
+          "file_version_raw": "1.0.1.0",
+          "product_version": "1.0.1.0",
+          "product_version_raw": "1.0.1.0"
         },
         "info": {
           "0000": {
             "CompanyName": "资料文档生成",
             "FileDescription": "资料文档批量生成工具",
-            "FileVersion": "1.0.0.0",
+            "FileVersion": "1.0.1.0",
             "InternalName": "docgen",
             "OriginalFilename": "docgen.exe",
             "ProductName": "资料文档生成",
-            "ProductVersion": "1.0.0.0"
+            "ProductVersion": "1.0.1.0"
           },
           "0409": {
             "CompanyName": "DocGen",
             "FileDescription": "Batch document generator",
-            "FileVersion": "1.0.0.0",
+            "FileVersion": "1.0.1.0",
             "InternalName": "docgen",
             "OriginalFilename": "docgen.exe",
             "ProductName": "DocGen",
-            "ProductVersion": "1.0.0.0"
+            "ProductVersion": "1.0.1.0"
           }
         }
       }

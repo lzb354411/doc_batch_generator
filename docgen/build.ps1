@@ -3,7 +3,7 @@
 # 用法（在 docgen/ 目录下）：
 #    powershell -ExecutionPolicy Bypass -File build.ps1
 #
-# 产物：docgen\资料文档生成.exe（带图标、版本信息 1.0.0）
+# 产物：docgen\资料文档生成.exe（带图标、版本信息 1.0.1）
 
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -14,7 +14,7 @@ Set-Location $root
 $env:PATH = "C:\msys64\mingw64\bin;C:\Users\14544\go\bin;" + $env:PATH
 $env:CGO_ENABLED = "1"
 
-$version = "1.0.0"
+$version = "1.0.1"
 $outName = "资料文档生成.exe"
 
 Write-Host "==> 1/3 生成资源文件（图标/版本信息/清单）..."

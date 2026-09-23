@@ -102,7 +102,7 @@ type App struct {
 	logWinLabels []*widget.Label // 日志窗口已创建的控件（与 logLines 前 n 个一一对应）
 }
 
-// Version 应用版本号。正式构建时通过 -ldflags "-X docgen/internal/ui.Version=1.0.0" 注入。
+// Version 应用版本号。正式构建时通过 -ldflags "-X docgen/internal/ui.Version=1.0.1" 注入。
 var Version = "dev"
 
 // Run 启动 GUI 主窗口（阻塞直至窗口关闭）。

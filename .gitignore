@@ -11,5 +11,8 @@ docgen/dist/
 # 本机运行配置（含真实路径与业务数据）
 docgen/config.json
 
-# 真实模板验收输出（内容含模板数据，不上传）
+# 测试/验收生成的文档输出（可由 mkfixtures/pygolden 重新生成）
+docgen/testdata/out/
+docgen/testdata/out_gui/
+docgen/testdata/out_python/
 docgen/testdata/real/out/

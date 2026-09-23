@@ -1,8 +1,8 @@
-; 资料文档生成 —— Inno Setup 安装包脚本
+﻿; 资料文档生成 —— Inno Setup 安装包脚本
 ; 编译：ISCC.exe install.iss（须先运行 build.ps1 生成 资料文档生成.exe）
 
 #define MyAppName "资料文档生成"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppExeName "资料文档生成.exe"
 
 [Setup]
